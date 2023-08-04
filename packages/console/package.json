@@ -19,6 +19,7 @@
     "@aws-sdk/client-s3": "3.43.0",
     "@aws-sdk/client-ssm": "3.43.0",
     "@aws-sdk/fetch-http-handler": "^3.6.1",
+    "@aws-sdk/middleware-signing": "^3.272.0",
     "@aws-sdk/s3-request-presigner": "3.43.0",
     "@aws-sdk/util-dynamodb": "^3.52.0",
     "@fontsource/jetbrains-mono": "^4.5.0",
@@ -35,6 +36,9 @@
     "@react-hook/hotkey": "^3.1.0",
     "@sentry/react": "^6.19.4",
     "@sentry/tracing": "^6.19.4",
+    "@smithy/config-resolver": "^2.0.1",
+    "@smithy/middleware-retry": "^2.0.1",
+    "@smithy/smithy-client": "^2.0.1",
     "@stitches/react": "^1.2.6",
     "@trpc/client": "9.18.0",
     "@trpc/react": "9.18.0",
@@ -61,6 +65,7 @@
     "remeda": "^0.0.32"
   },
   "devDependencies": {
+    "@smithy/types": "^2.0.2",
     "@types/file-saver": "^2.0.4",
     "@types/react": "^17.0.33",
     "@types/react-dom": "^17.0.10",

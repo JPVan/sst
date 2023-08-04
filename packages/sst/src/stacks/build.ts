@@ -63,6 +63,7 @@ export async function load(input: string, shallow?: boolean) {
                 filename: "sst.config.ts",
                 plugins: [ts],
               });
+              if (ast === null) throw new VisibleError("Could not parse sst.config.ts");
               babel.traverse(ast, {
                 ObjectMethod(path) {
                   const { key } = path.node;

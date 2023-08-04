@@ -1,13 +1,13 @@
 import { Context } from "./context/context.js";
 import { fromNodeProviderChain } from "@aws-sdk/credential-providers";
-import { Client } from "@aws-sdk/smithy-client";
-import { RegionInputConfig } from "@aws-sdk/config-resolver";
-import { RetryInputConfig } from "@aws-sdk/middleware-retry";
+import { Client } from "@smithy/smithy-client";
+import { RegionInputConfig } from "@smithy/config-resolver";
+import { RetryInputConfig } from "@smithy/middleware-retry";
 import { AwsAuthInputConfig } from "@aws-sdk/middleware-signing";
 import { GetCallerIdentityCommand, STSClient } from "@aws-sdk/client-sts";
 import { Logger } from "./logger.js";
 import { SdkProvider } from "sst-aws-cdk/lib/api/aws-auth/sdk-provider.js";
-import { StandardRetryStrategy } from "@aws-sdk/middleware-retry";
+import { StandardRetryStrategy } from "@smithy/middleware-retry";
 
 type Config = RegionInputConfig &
   RetryInputConfig &
@@ -120,7 +120,7 @@ export function useAWSClient<C extends Client<any, any, any, any>>(
       // This is a workaround to disable that.
       retryQuota: {
         hasRetryTokens: () => true,
-        releaseRetryTokens: () => {},
+        releaseRetryTokens: () => { },
         retrieveRetryTokens: () => 1,
       },
     }),
@@ -151,14 +151,14 @@ export const useAWSProvider = Context.memo(async () => {
       get(cb) {
         cb();
       },
-      async getPromise() {},
+      async getPromise() { },
       needsRefresh() {
         return false;
       },
       refresh(cb) {
         cb();
       },
-      async refreshPromise() {},
+      async refreshPromise() { },
       expired: false,
       expireTime: creds.expiration!,
       accessKeyId: creds.accessKeyId!,

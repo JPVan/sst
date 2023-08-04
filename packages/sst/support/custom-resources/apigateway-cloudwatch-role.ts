@@ -8,7 +8,7 @@ import {
   AttachRolePolicyCommand,
   CreateRoleCommand,
 } from "@aws-sdk/client-iam";
-import { StandardRetryStrategy } from "@aws-sdk/middleware-retry";
+import { StandardRetryStrategy } from "@smithy/middleware-retry";
 
 const apig = new APIGatewayClient({
   logger: console,
@@ -124,7 +124,7 @@ async function attachRoleToApiGateway(roleArn: string) {
     if (
       e.name === "BadRequestException" &&
       e.message ===
-        "The role ARN does not have required permissions configured. Please grant trust permission for API Gateway and add the required role policy."
+      "The role ARN does not have required permissions configured. Please grant trust permission for API Gateway and add the required role policy."
     ) {
       console.log("Retry after 1 second");
       await new Promise((resolve) => setTimeout(resolve, 1000));

@@ -1,11 +1,11 @@
 import { useMemo } from "react";
 import { useAuth, useSSL } from "../global";
-import { Client } from "@aws-sdk/smithy-client";
-import { RegionInputConfig } from "@aws-sdk/config-resolver";
-import { RetryInputConfig } from "@aws-sdk/middleware-retry";
+import { Client } from "@smithy/smithy-client";
+import { RegionInputConfig } from "@smithy/config-resolver";
+import { RetryInputConfig } from "@smithy/middleware-retry";
 import { AwsAuthInputConfig } from "@aws-sdk/middleware-signing";
 import { FetchHttpHandler } from "@aws-sdk/fetch-http-handler";
-import {} from "@aws-sdk/smithy-client";
+//import { } from "@smithy/smithy-client";
 
 type Config = RegionInputConfig & RetryInputConfig & AwsAuthInputConfig;
 
