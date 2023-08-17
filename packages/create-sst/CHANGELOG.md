@@ -1,5 +1,35 @@
 # create-sst
 
+## 2.24.7
+
+## 2.24.6
+
+## 2.24.5
+
+## 2.24.4
+
+### Patch Changes
+
+- [#3222](https://github.com/sst/sst/pull/3222) [`a594b1964`](https://github.com/sst/sst/commit/a594b1964afb285308fb31fd0c5748f10b22693e) Thanks [@adolfogc](https://github.com/adolfogc)! - Function: support Python 3.11 runtie
+
+## 2.24.3
+
+## 2.24.2
+
+## 2.24.1
+
+## 2.24.0
+
+### Minor Changes
+
+- [#3217](https://github.com/sst/sst/pull/3217) [`01d16a8d4`](https://github.com/sst/sst/commit/01d16a8d461d411c6beb31507ef9ab102f446ec9) Thanks [@github-actions](https://github.com/apps/github-actions)! - Update CDK to 2.91.0
+
+### Patch Changes
+
+- [#3201](https://github.com/sst/sst/pull/3201) [`f5a7d5609`](https://github.com/sst/sst/commit/f5a7d560930434b48d1970c7eddf3c5044caae58) Thanks [@jayair](https://github.com/jayair)! - Update serverless-stack to sst
+
+## 2.23.15
+
 ## 2.23.14
 
 ## 2.23.13

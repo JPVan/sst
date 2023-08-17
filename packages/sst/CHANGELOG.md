@@ -1,5 +1,69 @@
 # @serverless-stack/cli2
 
+## 2.24.7
+
+### Patch Changes
+
+- [`18ac7b541`](https://github.com/sst/sst/commit/18ac7b5410f9e9dd208791f3e0ef6fe296838170) Thanks [@thdxr](https://github.com/thdxr)! - function: collect and upload sourcemaps
+
+## 2.24.6
+
+### Patch Changes
+
+- [#3232](https://github.com/sst/sst/pull/3232) [`1c8972690`](https://github.com/sst/sst/commit/1c89726905f8ab50d872b517f6be45bcba4608fd) Thanks [@fwang](https://github.com/fwang)! - Respect project region for AWS credentials provider
+
+## 2.24.5
+
+### Patch Changes
+
+- [#3227](https://github.com/sst/sst/pull/3227) [`820c8e55c`](https://github.com/sst/sst/commit/820c8e55cbd9349e5c1dc9195e99650fed750e77) Thanks [@jamesgibbons92](https://github.com/jamesgibbons92)! - sst types: add CLI command to generate resource types
+
+## 2.24.4
+
+### Patch Changes
+
+- [#3222](https://github.com/sst/sst/pull/3222) [`a594b1964`](https://github.com/sst/sst/commit/a594b1964afb285308fb31fd0c5748f10b22693e) Thanks [@adolfogc](https://github.com/adolfogc)! - Function: support Python 3.11 runtie
+
+- [#3224](https://github.com/sst/sst/pull/3224) [`3b89a6201`](https://github.com/sst/sst/commit/3b89a6201baf222f7640159f5002c9a111228f3a) Thanks [@jamesgibbons92](https://github.com/jamesgibbons92)! - Bucket: fix auto delete objects on destroy removal
+
+- [`caf7f0712`](https://github.com/sst/sst/commit/caf7f07124e39212fd81b967a156230ce9aa7098) Thanks [@fwang](https://github.com/fwang)! - Bump @smithy/signature-v4 to 2.0.4
+
+## 2.24.3
+
+### Patch Changes
+
+- [`11bb33900`](https://github.com/sst/sst/commit/11bb339009a743f23446a9a1a3fcf0741e54ca6b) Thanks [@thdxr](https://github.com/thdxr)! - cli: fix nodejs rebuilding issue
+
+- [`5ecba62dd`](https://github.com/sst/sst/commit/5ecba62dddcbafc88f43d8a1d1fcc930207076b1) Thanks [@thdxr](https://github.com/thdxr)! - cli: ignore any babel config files
+
+## 2.24.2
+
+### Patch Changes
+
+- [`62f78efd7`](https://github.com/sst/sst/commit/62f78efd7367c95d1b58737d18a52bcae293e3f2) Thanks [@fwang](https://github.com/fwang)! - Service: support private services
+
+## 2.24.1
+
+### Patch Changes
+
+- [`77bec32bc`](https://github.com/sst/sst/commit/77bec32bcce20a6e045951dbd2a6f730184cfc33) Thanks [@fwang](https://github.com/fwang)! - sst bind: fix cli hanging before site is deployed
+
+## 2.24.0
+
+### Minor Changes
+
+- [#3217](https://github.com/sst/sst/pull/3217) [`01d16a8d4`](https://github.com/sst/sst/commit/01d16a8d461d411c6beb31507ef9ab102f446ec9) Thanks [@github-actions](https://github.com/apps/github-actions)! - Update CDK to 2.91.0
+
+### Patch Changes
+
+- [#3201](https://github.com/sst/sst/pull/3201) [`f5a7d5609`](https://github.com/sst/sst/commit/f5a7d560930434b48d1970c7eddf3c5044caae58) Thanks [@jayair](https://github.com/jayair)! - Update serverless-stack to sst
+
+## 2.23.15
+
+### Patch Changes
+
+- [`cb4bc1a26`](https://github.com/sst/sst/commit/cb4bc1a2654b29378b1c555b987707adbba07230) Thanks [@thdxr](https://github.com/thdxr)! - console: update console URL
+
 ## 2.23.14
 
 ### Patch Changes
